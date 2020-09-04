@@ -2,9 +2,17 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    d = {}
+    out = []
+    for i in a:
+        test = abs(i)
+        # breakpoint()
+        if abs(i) in d:
+            out.append(abs(i))
+        else:
+            d[abs(i)] = 1
+    return out
 
-    return result
 
 
 if __name__ == "__main__":

@@ -2,7 +2,18 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    d = {}
+    arrays = [set(i) for i in arrays]
+
+    d = {}
+
+    arrays.pop()
+    for i in arrays:
+        i = set(i)
+        for j in i:
+            if 
+
+
 
     return result
 
