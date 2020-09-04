@@ -6,9 +6,19 @@ def finder(files, queries):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    d = {}
+    for i in files:
+        f = i.split('/')
+        if f[-1] in d:
+            d[f[-1]].append(i)
+        else:
+            d[f[-1]] = [i]
+    out = []
+    for i in queries:
+        if i in d:
+            out.extend(d[i])
 
-    return result
+    return out
 
 
 if __name__ == "__main__":
